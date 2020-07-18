@@ -11,6 +11,7 @@ function generateMarkdown(data) {
   * [Contributors](#contributors)
   * [Test](#test)
   * [Questions](#questions)
+  * 
   ## Description
   ${data.Description}
   ## Installation instructions
@@ -23,6 +24,7 @@ function generateMarkdown(data) {
   ${data.Contributors}
   ## Test
   ${data.Test}
+
   ## Questions
   Contact me:
   Github:[${data.Username}](https://github.com/ttran1185)

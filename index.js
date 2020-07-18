@@ -1,43 +1,57 @@
-import { writeFile } from "fs";
-import pkg from 'inquirer';
-import generateMarkdown from "./utils/generateMarkdown.js";
 
-const { prompt } = pkg;
+const inquirer = require("inquirer");
+const fs = require("fs");
+const generateMarkDown = require("./utils/generateMarkdown");
+const util = require("util");
 
+const writeFileAsync = util.promisify(fs.writeFile);
+
+const questions = [
+    "What is the project title?",
+    "Describe your project.",
+    "What are the steps requried to install the project",
+    "Provid instructions for use",
+    "Select a License",
+    "How do you test your project?",
+    "Any contributors?",
+    "Please enter your email to contact me."
+
+
+]
 
 // array of questions for user
-const questions = [
+const questionsPrompt = [
 
     {
         type: "input",
-        message: "What is your project title?",
+        message: questions[0],
         name: "Title"
 
     },
 
     {
         type: "iput",
-        message: "Describe your project",
+        message: questions[1],
         name: "Description"
     },
 
 
     {
         type: "input",
-        message: "What are the steps required to install your project?",
+        message: questions[2],
         name: "Installation"
     },
 
     {
         type: "input",
-        message: "Provide instructions for use",
+        message: questions[3],
         name: "Usage"
 
     },
 
     {
         type: "input",
-        message: "Select License",
+        message: questions[4],
         name: "License",
         choices: [
             "MIT",
@@ -51,20 +65,20 @@ const questions = [
 
     {
         type: "input",
-        message: "How do you test your project?",
+        message: questions[5],
         name: "Test"
     },
 
     {
         type: "input",
-        message: "Any contributors?",
+        message: questions[6],
         name: "Contributors"
     },
   
     {
 
         type: "input",
-        message: "If you have further questions, please contact me.",
+        message: questions[7],
         name: "Questions"
 
     }
@@ -73,23 +87,18 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
-    writeToFile(fileName, data, err => {
-        if (err) {
-            throw err;
-        }
-    });
-}
+async function init() {
 
-// function to initialize program
-function init() {
-    prompt(questions).then(answers => {
+    try {
+      const answers = await questionsPrompt();
 
-        const repsonse = generateMarkdown(answers);
+      const readme = generateMarkDown(answers);
 
-        writeToFile("README.md", repsonse);
-    })
-}
-
+      await writeFileAsync("README.md", readme);
+ 
+    } catch (err) {
+   
+    }
+  }
 // function call to initialize program
 init();
