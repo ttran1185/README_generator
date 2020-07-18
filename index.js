@@ -21,12 +21,6 @@ const questions = [
         name: "Description"
     },
 
-      {
-        type: "input",
-        message: "Provide instructions for use",
-        name: "Table of Contents"
-
-    },
 
     {
         type: "input",
