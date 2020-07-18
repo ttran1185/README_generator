@@ -1,6 +1,5 @@
-
-const inquirer = require("inquirer");
 const fs = require("fs");
+const inquirer = require("inquirer");
 const generateMarkDown = require("./utils/generateMarkdown");
 const util = require("util");
 

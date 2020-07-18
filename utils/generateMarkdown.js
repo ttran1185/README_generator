@@ -4,14 +4,15 @@ function generateMarkdown(data) {
 
 
   ## Table of Contents
+  *[Title](#title)
   * [Description](#description)
   * [Installation instructions](#installation)
   * [Usage information](#usage)
   * [License](#license)
-  * [Contributors](#contributors)
   * [Test](#test)
+  * [Contributors](#contributors)
   * [Questions](#questions)
-  * 
+  
   ## Description
   ${data.Description}
   ## Installation instructions
@@ -20,10 +21,13 @@ function generateMarkdown(data) {
   ${data.Usage}
   ## License
   ${data.License}
-  ## Contributors
-  ${data.Contributors}
   ## Test
   ${data.Test}
+  ## Contributors
+  ${data.Contributors}
+  ## Questions
+  ${data.questions}
+
 
   ## Questions
   Contact me:
