@@ -1,3 +1,5 @@
+# README Generator
+
 
   ## Table of Contents
   * [Title](#title)
@@ -9,12 +11,14 @@
   * [Contributors](#contributors)
   * [Questions](#questions)
   
+  ## Title
+  README Generator
   ## Description
-  It is a generator that creates a README file.
+  It is a generator.
   ## Installation instructions
-   npm install, node index.js
+  npm install, node index.js
   ## Usage information
-  To create a README file
+  To create a README file.
   ## License
   MIT
   ## Test

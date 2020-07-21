@@ -1,6 +1,6 @@
 // function to generate markdown for README
 function generateMarkdown(answers) {
-  return `# ${answers.title}
+  return `# ${answers.Title}
 
 
   ## Table of Contents
@@ -13,6 +13,8 @@ function generateMarkdown(answers) {
   * [Contributors](#contributors)
   * [Questions](#questions)
   
+  ## Title
+  ${answers.Title}
   ## Description
   ${answers.Description}
   ## Installation instructions
