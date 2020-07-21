@@ -25,13 +25,14 @@ function generateMarkdown(answers) {
   ${answers.Test}
   ## Contributors
   ${answers.Contributors}
-
+  ## Questions
+  ${answers.Questions}
 
 
   ## Questions
-  Feel free to reach out for any questions: ${"\n"}
-  Github:[${answers.Username}](https://github.com/ttran1185)
-  Email:[${answers.Email}](https://github.com/ttran1185)
+ 
+  Github:(https://github.com/ttran1185)
+  Email:(https://github.com/ttran1185)
 
 `;
 }

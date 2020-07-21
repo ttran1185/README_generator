@@ -9,7 +9,7 @@ const questions = [
     "What is the project title?",
     "Describe your project.",
     "What are the steps requried to install the project",
-    "Provide instructions for use",
+    "What is it used for?",
     "Select a License",
     "How do you test your project?",
     "Any contributors?",

@@ -2,7 +2,7 @@
 
 
   ## Table of Contents
-  * [Title](#title)
+  *[Title](#title)
   * [Description](#description)
   * [Installation instructions](#installation)
   * [Usage information](#usage)
@@ -12,23 +12,23 @@
   * [Questions](#questions)
   
   ## Description
-  It generates a readme file.
+  It is a generator that creates a README file.
   ## Installation instructions
-  Have an index.js file and package.json file
+   npm install, node index.js
   ## Usage information
-  npm install, node index.js
+  To create a README file
   ## License
   MIT
   ## Test
-  By trying it!
+  By trying it
   ## Contributors
-  Yes, all my wonderful coding friends!
-
+  Yes, all my wonderful friends!
+  ## Questions
+  ttran1185@gmail.com
 
 
   ## Questions
-  Feel free to reach out for any questions: 
-
+ 
   Github:(https://github.com/ttran1185)
-  Email:(ttran1185@gmail.com)
+  Email:(https://github.com/ttran1185)
 
