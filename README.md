@@ -29,6 +29,6 @@
   ## Questions
   Feel free to reach out for any questions: 
 
-  Github:[undefined](https://github.com/ttran1185)
-  Email:[undefined](https://github.com/ttran1185)
+  Github:(https://github.com/ttran1185)
+  Email:(ttran1185@gmail.com)
 
