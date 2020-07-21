@@ -9,7 +9,7 @@ const questions = [
     "What is the project title?",
     "Describe your project.",
     "What are the steps requried to install the project",
-    "Provid instructions for use",
+    "Provide instructions for use",
     "Select a License",
     "How do you test your project?",
     "Any contributors?",
@@ -19,8 +19,8 @@ const questions = [
 ]
 
 // array of questions for user
-const questionsPrompt = [
-
+const questionsPrompt = () => {
+    return inquirer.prompt([ 
     {
         type: "input",
         message: questions[0],
@@ -52,13 +52,7 @@ const questionsPrompt = [
         type: "input",
         message: questions[4],
         name: "License",
-        choices: [
-            "MIT",
-            "GVL-GPL 3.0",
-            "APACHE 2.0",
-            "BSD 3",
-            "None"
-        ]
+        choices: ["BSD 3-Clause", "MIT"],
 
     },
 
@@ -83,20 +77,21 @@ const questionsPrompt = [
     }
 
 
-];
+    ]);
+};
 
 // function to write README file
 async function init() {
-
+       console.log("YAY! It worked");
     try {
       const answers = await questionsPrompt();
-
+      
       const readme = generateMarkDown(answers);
-
+     
       await writeFileAsync("README.md", readme);
- 
+      console.log("README Created");
     } catch (err) {
-   
+    console.log(err);
     }
   }
 // function call to initialize program

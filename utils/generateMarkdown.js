@@ -1,6 +1,6 @@
 // function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+function generateMarkdown(answers) {
+  return `# ${answers.title}
 
 
   ## Table of Contents
@@ -14,25 +14,24 @@ function generateMarkdown(data) {
   * [Questions](#questions)
   
   ## Description
-  ${data.Description}
+  ${answers.Description}
   ## Installation instructions
-  ${data.Installation}
+  ${answers.Installation}
   ## Usage information
-  ${data.Usage}
+  ${answers.Usage}
   ## License
-  ${data.License}
+  ${answers.License}
   ## Test
-  ${data.Test}
+  ${answers.Test}
   ## Contributors
-  ${data.Contributors}
-  ## Questions
-  ${data.questions}
+  ${answers.Contributors}
 
 
+
   ## Questions
-  Contact me:
-  Github:[${data.Username}](https://github.com/ttran1185)
-  Email:[${data.Email}](https://github.com/ttran1185)
+  Feel free to reach out for any questions: ${"\n"}
+  Github:[${answers.Username}](https://github.com/ttran1185)
+  Email:[${answers.Email}](https://github.com/ttran1185)
 
 `;
 }
