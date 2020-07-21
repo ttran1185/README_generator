@@ -1,5 +1,3 @@
-# undefined
-
 
   ## Table of Contents
   * [Title](#title)
