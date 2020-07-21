@@ -31,10 +31,6 @@ function generateMarkdown(answers) {
   ${answers.Questions}
 
 
-  ## Questions
- 
-  Github:(https://github.com/ttran1185)
-  Email:(https://github.com/ttran1185)
 
 `;
 }
