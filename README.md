@@ -1,4 +1,4 @@
-# README Generator
+# Note Taker
 
 
   ## Table of Contents
@@ -12,19 +12,19 @@
   * [Questions](#questions)
   
   ## Title
-  README Generator
+  Note Taker
   ## Description
-  It is a generator
+  It is an app that will allow to store notes.
   ## Installation instructions
-  npm install, node index.js
+  npm install --> node server.js
   ## Usage information
-  To create a README file
+  Store notes
   ## License
-  MIT
+  ![License](LICENSE)
   ## Test
-  By trying it
+  Live link: https://sheltered-shelf-67177.herokuapp.com/
   ## Contributors
-  Yes, all my wonderful friends
+  
   ## Questions
   ttran1185@gmail.com
 
